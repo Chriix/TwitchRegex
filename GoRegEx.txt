@@ -1,0 +1,15 @@
+## RegEx profanity filters using Golang RE2 
+## Developed by Chris Bonner (chrix26)
+## Used in fossabot & YAGPDB
+##
+## Feel free to test for personal use!
+
+## "awooga purpled"
+(a+w+o+o+g+a) *(purpled|prupled|purp|purple|greyson|grey|grayson|gray|burpled|burp)+|(purpled|prupled|purp|purple|greyson|grey|grayson|gray|burpled|burp)+ *(b+e+d+w+a+r+s)* *(a+w+o+g+a+)
+
+## ASCII art & languages
+(\p{Braille})|(\p{Arabic})|(\p{Cyrillic})|(\p{Hiragana})|(\p{Thai})|(\p{Canadian_Aboriginal})|(\p{Han})
+
+## Knee variation of n word
+(?i)(\b(kn(e|i)*[\W_.]*)(c|g)+([ea43]+)r*\b)
+
