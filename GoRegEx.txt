@@ -1,5 +1,5 @@
 ## RegEx profanity filters using Golang RE2 
-## Developed by Chris Bonner (chrix26)
+## Developed by Chris Bonner (chriix)
 ## Used in fossabot & YAGPDB
 ##
 ## Feel free to test for personal use!
@@ -13,3 +13,5 @@
 ## Knee variation of n word
 (?i)(\b(kn(e|i)*[\W_.]*)(c|g)+([ea43]+)r*\b)
 
+#n word
+(?i)(\b(n[\W_.]*)+([!i1l][\W_.]*)+(([gq][\W_.]*)+|([b][\W_.]*)+))(([a4])|(([e34au][\W_.]*)+h*))
