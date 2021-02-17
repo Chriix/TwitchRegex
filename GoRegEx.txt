@@ -4,14 +4,17 @@
 ##
 ## Feel free to test for personal use!
 
-## "awooga purpled"
+## "awooga purpled" (not optimized)
 (a+w+o+o+g+a) *(purpled|prupled|purp|purple|greyson|grey|grayson|gray|burpled|burp)+|(purpled|prupled|purp|purple|greyson|grey|grayson|gray|burpled|burp)+ *(b+e+d+w+a+r+s)* *(a+w+o+g+a+)
 
-## ASCII art & languages
+## ASCII art & common spammed languages
 (\p{Braille})|(\p{Arabic})|(\p{Cyrillic})|(\p{Hiragana})|(\p{Thai})|(\p{Canadian_Aboriginal})|(\p{Han})
 
-## Knee variation of n word
-(?i)(\b(kn(e|i)*[\W_.]*)(c|g)+([ea43]+)r*\b)
+## n word (i)
+(\b([k]*n[\W_.]*)+([!i1el3][\W_.]*)+(([gqx][\W_.]*)+|([b][\W_.]*)+))(([a4])|(([e3u][\W_.]*)+[hr74]*)\b)|(\b(n[\W_.]*)+([!i1l][\W_.]*)+(([gq][\W_.]*)+\b)
 
-#n word
-(?i)(\b(n[\W_.]*)+([!i1l][\W_.]*)+(([gq][\W_.]*)+|([b][\W_.]*)+))(([a4])|(([e34au][\W_.]*)+h*))
+## mic muted (i)
+\b(((m[\W_.]*)+([i!l1][\W_.]*)+(c[\W_.]*)+)([rophone][\W_.]*)*(([i!l1][\W_.]*)+([sz][\W_.]*)+)*((m[\W_.]*)+(u[\W_.]*)+(t[\W_.]*)+([e3][\W_.]*)+)(d[\W_.]*)+)\b
+
+## f word (i) [WIP]
+(\b([f7][\W_.]*)+([a34ex][\W_.]*)+(g[\W_.]*)+\b)|(\b([f7][\W_.]*)+([a34ex][\W_.]*)+(g[\W_.]*)+(([o0x][\W_.]*)*(t[\W_.]*)+)\b)
